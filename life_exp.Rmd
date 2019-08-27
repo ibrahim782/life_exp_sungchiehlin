@@ -15,7 +15,28 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Here, we examine the cool life expectancy plot.
 
-# Analysis
+# Life Expectancy Analysis
+
+```{r}
+#git status (folder still in working directory when folder is untracked)
+#git add (put folder into stage)
+```
+
+```{r}
+library(gapminder)
+library(tidyverse)
+gapminder_unfiltered %>%
+  group_by(year, country) %>%
+  summarise( Max_life = max(lifeExp)) #my way
+
+data("gapminder_unfiltered")
+gapminder_unfiltered %>%
+  group_by(year) %>%
+  filter(lifeExp == max(lifeExp)) %>%
+  select(country, lifeExp, year) %>%
+  arrange(year) ->
+  sumdat
+```
 
 
 
