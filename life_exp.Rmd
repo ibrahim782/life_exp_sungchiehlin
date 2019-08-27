@@ -1,0 +1,23 @@
+---
+title: "Examine Life Expectancy"
+author: "Lin Sung Chieh"
+date: "August 27, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# use HTML is effective to Git
+
+# Abstract
+
+Here, we examine the cool life expectancy plot.
+
+# Analysis
+
+
+
+
+
